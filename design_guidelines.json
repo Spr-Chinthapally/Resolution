@@ -1,0 +1,148 @@
+{
+  "project_name": "LargePrint AI",
+  "archetype": "Swiss & High-Contrast / Prepress Precision Studio",
+  "theme": "Light, neutral professional (clean whites/slates, print-shop precision feel)",
+  "design_principles": [
+    "Precision Prepress Aesthetic: Professional print-shop tool, NOT a generic AI prompt box or neon consumer app",
+    "Data & Metric Clarity: High contrast typography for resolution metrics, effective PPI, target enlarged pixels, and scale factors",
+    "Generous Spacing & High Intention: Air around cards, clear 1px subtle borders, zero clutter, responsive grid layouts",
+    "Tactile Micro-Feedback: Subtle border glows on active print mode selection, smooth progress steps, clear before/after slider"
+  ],
+  "forbidden_elements": [
+    "Neon AI styling, glowing magenta/purple gradients (#7351B7), and dark cyberpunk void aesthetics",
+    "Chatbot interfaces, prompt textboxes, or vague AI magic sparkle overload",
+    "Cartoon graphics or low-contrast text on transparent backgrounds",
+    "Universal CSS transitions (transition: all)",
+    "Missing data-testid attributes on interactive elements"
+  ],
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans, sans-serif",
+    "font_family_body": "Inter, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-tight",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight text-slate-900",
+      "h3_card": "text-xl sm:text-2xl font-semibold text-slate-800",
+      "h4_sub": "text-lg font-medium text-slate-700",
+      "body": "text-base text-slate-600 leading-relaxed",
+      "small_label": "text-xs font-mono uppercase tracking-widest text-slate-500",
+      "metric_value": "text-2xl sm:text-3xl font-mono font-bold text-slate-900"
+    }
+  },
+  "colors": {
+    "background_main": "#F8FAFC",
+    "background_card": "#FFFFFF",
+    "background_subtle": "#F1F5F9",
+    "border_default": "#E2E8F0",
+    "border_active": "#0284C7",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "text_muted": "#64748B",
+    "primary_brand": "#0284C7",
+    "primary_hover": "#0369A1",
+    "accent_slate": "#334155",
+    "badges": {
+      "excellent": {
+        "text": "#047857",
+        "bg": "#ECFDF5",
+        "border": "#A7F3D0",
+        "label": "Excellent"
+      },
+      "good": {
+        "text": "#1D4ED8",
+        "bg": "#EFF6FF",
+        "border": "#BFDBFE",
+        "label": "Good Quality"
+      },
+      "needs_enhancement": {
+        "text": "#B45309",
+        "bg": "#FFFBEB",
+        "border": "#FDE68A",
+        "label": "Needs Enhancement"
+      },
+      "low_res": {
+        "text": "#B91C1C",
+        "bg": "#FEF2F2",
+        "border": "#FECACA",
+        "label": "Low Resolution"
+      }
+    }
+  },
+  "layout_and_grid": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+    "card_style": "bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 p-6 sm:p-8",
+    "active_card_style": "bg-white border-2 border-sky-600 rounded-xl shadow-md p-6 sm:p-8"
+  },
+  "workflow_steps": [
+    {
+      "step_id": 1,
+      "title": "Upload",
+      "description": "Upload high-res photo, digital vector, or AI output",
+      "key_elements": [
+        "Drag-and-drop zone with drag-over state",
+        "File metadata card (Dimensions in px, Megapixels MP, File size MB, Format)",
+        "Image thumbnail preview with zoom thumbnail"
+      ]
+    },
+    {
+      "step_id": 2,
+      "title": "Print Setup",
+      "description": "Select print medium, custom size, and viewing distance",
+      "key_elements": [
+        "Print Type selector cards (Billboard, Banner, Poster, Sign, Trade Show Display, Custom)",
+        "Dimension input form (Width, Height) with Unit Toggle (Inches, Feet, cm, mm)",
+        "Viewing Distance selector (<3 ft Close, 3-10 ft Medium, >10 ft Far/Billboard)"
+      ]
+    },
+    {
+      "step_id": 3,
+      "title": "Resolution Analysis",
+      "description": "Preflight resolution check and target PPI calculation",
+      "key_elements": [
+        "Source Quality Badge (Excellent, Good, Needs Enhancement, Low Resolution)",
+        "Current Effective PPI vs Recommended PPI gauge",
+        "Required Target Resolution (e.g., 14,400 x 7,200 px)",
+        "Magnification & Scale Factor display (e.g., 4.5x enlargement required)"
+      ]
+    },
+    {
+      "step_id": 4,
+      "title": "Enhance",
+      "description": "Select enhancement mode and process image",
+      "key_elements": [
+        "Enhancement mode cards: 'Print Accurate' (sharp lines, anti-halo) vs 'AI Artwork' (synthesized detail, grain control)",
+        "Process triggering action CTA",
+        "Processing progress screen with 5 multi-stage status indicators (Pre-flight, Spatial grid, Frequency separation, Edge sharpening, Color profile verification)"
+      ]
+    },
+    {
+      "step_id": 5,
+      "title": "Download",
+      "description": "Compare before/after and download print-ready master file",
+      "key_elements": [
+        "Interactive before/after comparison slider with split view handle",
+        "Zoom controls (Fit, 100% Crop View, 200% Pixel Detail)",
+        "Print Readiness Audit Card (Bleed status, PPI target check, Color profile CMYK/RGB advisory)",
+        "Download options (300 DPI PDF, Uncompressed TIFF, Ultra PNG)"
+      ]
+    }
+  ],
+  "image_urls": {
+    "billboard_example": "https://images.unsplash.com/photo-1560196327-cca0a731441b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwzfHxsYXJnZSUyMGZvcm1hdCUyMHByaW50aW5nJTIwYmlsbGJvYXJkJTIwYmFubmVyJTIwdHJhZGUlMjBzaG93JTIwcG9zdGVyfGVufDB8fHx8MTc4OTY1NDk1Mnww&ixlib=rb-4.1.0&q=85",
+    "street_poster_example": "https://images.pexels.com/photos/3964819/pexels-photo-3964819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "exhibition_pillar_example": "https://images.pexels.com/photos/38755331/pexels-photo-38755331.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "sample_landscape_artwork": "https://images.unsplash.com/photo-1654339394814-0240ba7beea9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwcmVzb2x1dGlvbiUyMGFydCUyMHBob3RvZ3JhcGh5JTIwcHJpbnQlMjBkZXRhaWwlMjBwb3J0cmFpdCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3ODk2NTQ5NTh8MA&ixlib=rb-4.1.0&q=85",
+    "sample_portrait_artwork": "https://images.unsplash.com/photo-1778270339550-8b0f166de57f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxoaWdoJTIwcmVzb2x1dGlvbiUyMGFydCUyMHBob3RvZ3JhcGh5JTIwcHJpbnQlMjBkZXRhaWwlMjBwb3J0cmFpdCUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3ODk2NTQ5NTh8MA&ixlib=rb-4.1.0&q=85",
+    "sample_texture_detail": "https://images.pexels.com/photos/16547371/pexels-photo-16547371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the 5-step progress workflow for main application state (Upload -> Print Setup -> Analyze -> Enhance -> Download).",
+    "Build a responsive header with navigation links (How it Works, Use Cases, Resolution Guide), CTA button, and clean branding.",
+    "Implement Landing Page sections when not in active workflow mode: Hero section with clear headline, 3-step value prop, supported use-cases cards, sample before/after demonstration, and Prepress FAQ.",
+    "Use clean, professional UI with subtle slates, crisp white cards, and sky-blue accent colors. DO NOT use dark cyberpunk or purple gradient themes.",
+    "Ensure every interactive element has explicit data-testid attributes for testing automation.",
+    "Use lucide-react icons for UI elements (Upload, Check, AlertTriangle, Layers, Maximize, ZoomIn, Download, Sliders, Info, Printer)."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": "Follow light neutral prepress studio guidelines. Include data-testid on all interactive buttons, steps, inputs, and badges. Avoid neon AI slop, transparent dropdown backgrounds, or transition:all."
+}
